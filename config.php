@@ -1,9 +1,9 @@
 <?php
 // veritabanına bağlanalım
 	$servername = "localhost";
-	$username   = "hakkicen_kirli";
-	$password   = "102030aaA.";
-	$dbname     = "hakkicen_camasir";
+	$username   = "YOUR_DB_USERNAME";
+	$password   = "YOUR_DB_USERPASS";
+	$dbname     = "YOUR_DBNAME";
 
 	$db = new mysqli($servername, $username, $password, $dbname);
 	if ($db->connect_error) {
@@ -18,5 +18,5 @@
 	
 
 	$sql = "SELECT * FROM kirliler";
-    $result = $db->query($sql);
+        $result = $db->query($sql);
 ?>
