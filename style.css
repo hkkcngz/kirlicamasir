@@ -1,0 +1,302 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+hd4,
+h5,
+h6 {
+  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+body {
+  background: #999;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.kirli-camasir {
+  position: relative;
+  display: block;
+  width: 720px;
+  height: 867px;
+  max-width: 100%;
+  margin: 20px auto;
+}
+
+.kirli-camasir div,
+.kirli-camasir svg,
+.kirli-camasir input,
+.kirli-camasir label,
+.kirli-camasir ul,
+.kirli-camasir img {
+  position: absolute;
+}
+
+#arama {
+  width: 100%;
+  padding: 12px 20px;
+  top: 20px;
+  left: 55px;
+  font-size: 40px;
+  line-height: 80px;
+  max-width: 470px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  color: #333;
+  overflow: hidden;
+}
+
+#camasirListesi {
+  display: none;
+  list-style-type: none;
+  padding: 10px;
+  margin: 0;
+  max-height: 490px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #ccc;
+  border: 5px solid #333;
+  border-radius: 5px;
+  overflow: auto;
+  position: absolute;
+  top: 53%;
+  left: 54%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#camasirListesi li {
+  position: relative;
+  border-bottom: 5px solid #ccc;
+  border-radius: 10px;
+  min-width: 250px;
+  overflow: hidden;
+}
+
+#camasirListesi li a {
+  background-color: #999;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  display: block;
+}
+
+#camasirListesi li a:hover:not(.header) {
+  background-color: #bdbdbd;
+}
+
+#camasirListesi li:last-child {
+  border: none;
+}
+
+#camasirListesi::-webkit-scrollbar {
+  width: 9px;
+}
+
+#camasirListesi::-webkit-scrollbar-track {
+  background: #cacaca;
+}
+
+#camasirListesi::-webkit-scrollbar-thumb {
+  background: #555;
+}
+
+#camasirListesi::-webkit-scrollbar-thumb:hover {
+  background: #333;
+}
+
+#buton {
+  cursor: pointer;
+}
+
+#buton:hover {
+  opacity: 0.8;
+}
+
+c {
+  display: inline-block;
+  word-wrap: break-word;
+  background: rgba(255, 165, 0, 0.8);
+  color: #fff;
+  border-radius: 5px;
+  padding: 0 3px;
+}
+
+.addNew,
+.infobox {
+  display: none;
+  width: 430px;
+  height: 450px;
+  padding: 90px 70px;
+  margin: 0;
+  top: 235px;
+  left: 54%;
+  max-height: 490px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: #ccc;
+  border: 5px solid #333;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #BFD6D4;
+}
+
+.addNew input,
+.addNew button,
+.infobox input,
+.infobox button {
+  position: unset;
+  max-width: 100%;
+  width: 100%;
+  padding: 6px 10px;
+  font-size: 20px;
+  line-height: 30px;
+  background-color: #999;
+  outline: none;
+  border: 5px solid #555;
+  border-radius: 15px;
+  color: #555;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.addNew input:hover,
+.addNew button:hover,
+.infobox input:hover,
+.infobox button:hover {
+  background-color: #b3b3b3;
+}
+
+.addNew button,
+.infobox button {
+  display: block;
+  width: 50%;
+  margin: 20px auto 0 auto;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.addNew.active {
+  display: block;
+}
+
+.infotoggle {
+  right: 40px;
+  top: 80px;
+  width: 30px;
+  height: 30px;
+  line-height: 25px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #999;
+  border: 3px solid #222;
+  color: #ccc;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+
+.infotoggle:hover {
+  background-color: #b3b3b3;
+}
+
+.infobox {
+  color: #fff;
+  padding: 45px;
+  background: #2196F3;
+  text-align: center;
+  overflow: auto;
+}
+
+.infobox::-webkit-scrollbar {
+  width: 9px;
+}
+
+.infobox::-webkit-scrollbar-track {
+  background: rgba(202, 202, 202, 0.5);
+}
+
+.infobox::-webkit-scrollbar-thumb {
+  background: rgba(85, 85, 85, 0.5);
+}
+
+.infobox::-webkit-scrollbar-thumb:hover {
+  background: rgba(51, 51, 51, 0.5);
+}
+
+@media (max-width: 400px) {
+  input#arama {
+    font-size: 20px;
+    line-height: 20px;
+    left: 32px;
+    top: 23px;
+    max-width: 228px;
+    padding: 3px 5px;
+  }
+  ul#camasirListesi {
+    top: 26%;
+  }
+  .infotoggle {
+    top: 30px;
+    right: 5px;
+  }
+  .addNew, .infobox {
+    width: 280px;
+    height: 280px;
+    top: 13%;
+    overflow: auto;
+    padding: 45px;
+  }
+  .addNew input {
+    margin-bottom: 1px;
+    padding: 3px 5px;
+    border: 2px solid #555;
+  }
+  .addNew button {
+    margin: 5px auto;
+    padding: 3px 5px;
+    border: 2px solid #555;
+    border-radius: 25px;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 720px) {
+  input#arama {
+    font-size: 20px;
+    line-height: 20px;
+    left: 30px;
+    top: 25px;
+    max-width: 285px;
+  }
+  .infotoggle {
+    top: 50px;
+    right: 15px;
+  }
+  .addNew, .infobox {
+    top: 13%;
+    max-width: 70vw;
+    max-height: 50vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */
