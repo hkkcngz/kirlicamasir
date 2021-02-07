@@ -14,7 +14,7 @@
         VALUES('$name', '$tag', '$link')";
         mysqli_query($db, $query);
 
-        header('Location: https://hakki.xyz/kirlicamasir');
+        header('Location: index.php');
         exit;
     }
 
@@ -24,7 +24,7 @@
         $query = "DELETE FROM kirliler  WHERE id=$id";
         mysqli_query($db, $query);
 
-        header('Location: https://hakki.xyz/kirlicamasir');
+        header('Location: index.php');
         exit;
     }
 
@@ -35,7 +35,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kirli Çamaşır - Hakkı Cengiz ~ Fatma Şişik</title>
+    <title>Kirli Çamaşır - Hakkı ve Fatma</title>
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="style.css">
 </head>
